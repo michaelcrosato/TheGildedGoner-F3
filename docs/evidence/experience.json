@@ -1,0 +1,21 @@
+[
+  {
+    "desktop": true,
+    "upgrades": true,
+    "equipment": true,
+    "deathRecovery": true,
+    "reloadPersistence": true,
+    "endingAndPostgameMovement": true,
+    "trialIsolation": true,
+    "audio": {
+      "state": "running",
+      "peak": 0.06101119518280029
+    }
+  },
+  {
+    "webkitPhone": true,
+    "spectatorOnly": true,
+    "menuTouch": true,
+    "touchInterrupt": true
+  }
+]

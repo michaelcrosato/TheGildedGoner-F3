@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#152724">
+  <meta name="description" content="The Gilded Goner — a small soul in a world that forgot the dawn. An original controller-first action RPG, built with my-3d2dge.">
+  <title>The Gilded Goner · The Bellwether Sanctum</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23152724'/%3E%3Cpath d='M32 8L46 29 39 49 25 49 18 29Z' fill='none' stroke='%23dbc18a' stroke-width='3'/%3E%3Cpath d='M32 8V56M17 33H47' stroke='%23dbc18a' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="screen" aria-label="The Bellwether Sanctum game world"></canvas>
+  <div class="atmosphere" aria-hidden="true"></div>
+  <div id="title-screen">
+    <div class="title-shade"></div>
+    <div class="edition"><span class="tiny-mark">✧</span> AN ASHEN TALE <span class="rule"></span> CHAPTER I</div>
+    <main class="title-content">
+      <svg class="sigil" viewBox="0 0 100 115" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><ellipse cx="50" cy="47" rx="26" ry="33"/><ellipse cx="50" cy="47" rx="20" ry="27"/><path d="M50 0V108M42 8L50 0 58 8M18 47H82M28 23L73 76M72 23L27 76M50 77L39 94 50 110 61 94Z"/><path d="M37 59Q40 52 40 37Q50 28 60 37Q60 52 63 59ZM34 62H66M50 62V69" stroke-width="2"/></g></svg>
+      <p class="eyebrow">A SMALL SOUL. A LONG SHADOW.</p>
+      <h1><span>THE GILDED</span><strong>GONER</strong></h1>
+      <div class="title-divider"><i></i><span>THE BELLWETHER SANCTUM</span><i></i></div>
+      <p class="intro">The sun has fallen silent.<br>Give the world one last reason to ring.</p>
+      <nav id="title-actions" aria-label="Main menu">
+        <button data-action="begin" class="menu-choice primary"><span class="choice-mark">◇</span><span id="begin-label">Begin journey</span><span class="choice-arrow">↗</span></button>
+        <button data-action="demo" class="menu-choice"><span class="choice-mark">◇</span>Watch the wandering<span class="small-label">DEMO</span></button>
+        <button data-action="settings" class="menu-choice"><span class="choice-mark">◇</span>Settings & controls</button>
+        <button data-action="credits" class="quiet-link">About this tale <span>↗</span></button>
+      </nav>
+    </main>
+    <aside class="location-card"><span>01 / THE QUIET APPROACH</span><p>Even here,<br>something golden grows.</p><i></i></aside>
+    <footer class="title-footer"><span id="device-label"><b>✕</b> / ENTER TO BEGIN <i>·</i> CONTROLLER RECOMMENDED</span><span id="idle-label">THE WORLD WAKES IN 10s</span></footer>
+  </div>
+  <div id="hud" hidden>
+    <div class="vitals"><div class="vital-sigil">♧</div><div class="vital-bars"><div class="bar health"><span id="hp-bar"></span></div><div class="bar focus"><span id="focus-bar"></span></div><div class="bar stamina"><span id="stamina-bar"></span></div><span id="hp-label">100 / 100</span></div></div>
+    <div class="compass"><span>W</span><i></i><b>◇</b><i></i><span>N</span><p id="objective">Seek Iona at the pilgrim’s rest</p></div>
+    <div class="currency"><span>✧</span><b id="embers">0</b><small>EMBERS</small></div>
+    <div class="equipment"><div class="flask-icon">♜<b id="flasks">3</b></div><div><span id="weapon-name">Pilgrim’s blade</span><small id="flask-hint">Q · Amber flask</small></div></div>
+    <div class="play-hints" id="play-hints"></div>
+    <div class="interact" id="interact" hidden></div>
+    <div class="boss" id="boss" hidden><span id="boss-name">AUREL, THE LAST BELLKEEPER</span><div class="bar"><span id="boss-bar"></span></div></div>
+  </div>
+  <div id="region" class="region" aria-live="polite"></div>
+  <div id="notice" class="notice" role="status" aria-live="polite"></div>
+  <div id="demo-banner" hidden><span class="live-dot"></span> THE WANDERING <i>·</i> AUTONOMOUS PLAY <small>Any input returns to the title</small></div>
+  <div id="death" class="death" hidden><span>GILDED NO MORE</span><p>Your embers wait where you fell.</p></div>
+  <div id="overlay" class="overlay" hidden><section id="panel" class="panel" role="dialog" aria-modal="true" aria-labelledby="panel-title"></section></div>
+  <button id="menu-button" aria-label="Open menu">☰</button>
+  <div id="performance" aria-label="Performance">60 <span>FPS</span> <i>·</i> 16.7 ms</div>
+  <div id="boot-error" hidden role="alert"></div>
+  <noscript>This game requires JavaScript. No account or network connection is needed after loading.</noscript>
+  <!-- Source reference, separate from engine evaluation:
+    Initial date: 2026-10-16.
+    SOURCE: Elden Ring (2022). An original spiritual successor; no source assets used.
+    GAME ENGINE: my-3d2dge 0.46.1, https://github.com/michaelcrosato/my-3d2dge
+    Pinned upstream: cfa866aa45474868350cad1a7fc015e612f9305f
+    Environment: Codex CLI workspace, Ubuntu 26.04.1 on WSL2, Node.js 22.23.3; Chromium, Firefox and WebKit testing.
+    AI lab/model: OpenAI, Codex based on GPT-6 as identified by the session instructions. Reasoning effort is not exposed and is not asserted.
+  -->
+  <script src="vendor/my-3d2dge.js"></script>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

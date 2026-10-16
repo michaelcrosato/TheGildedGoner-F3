@@ -1,0 +1,17 @@
+{
+  "name": "the-gilded-goner-f3",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An original, controller-first soulslike: The Bellwether Sanctum.",
+  "scripts": {
+    "dev": "node tools/serve.mjs",
+    "build": "node tools/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node tools/browser-test.mjs",
+    "test:experience": "node tools/experience-test.mjs",
+    "bench": "node tools/benchmark.mjs",
+    "check": "npm test && npm run build"
+  },
+  "devDependencies": { "playwright": "1.63.0" }
+}

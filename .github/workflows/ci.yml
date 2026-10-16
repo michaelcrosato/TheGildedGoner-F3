@@ -1,0 +1,60 @@
+name: Verify game
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium webkit
+      - run: npm run test:browser
+        env:
+          GONER_ENGINES: chromium
+          GONER_QA_OUT: /tmp/goner-browser-qa
+      - name: Verify persistence, ending, audio and touch presentation
+        run: |
+          node tools/serve.mjs --dist > /tmp/goner-server.log 2>&1 &
+          GONER_SERVER_PID=$!
+          trap 'kill "$GONER_SERVER_PID"' EXIT
+          curl --retry 6 --retry-connrefused --retry-delay 1 --fail --silent http://127.0.0.1:49173/ > /dev/null
+          npm run test:experience
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: game-and-verification
+          path: |
+            dist/
+            /tmp/goner-browser-qa/
+            /tmp/goner-experience/
+      - uses: actions/configure-pages@v5
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+      - uses: actions/upload-pages-artifact@v4
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        with:
+          path: dist
+  publish:
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    needs: verify
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment

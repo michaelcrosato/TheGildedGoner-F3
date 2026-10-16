@@ -1,0 +1,56 @@
+{
+  "url": "Standalone dist/TheGildedGoner-F3.html (file://)",
+  "results": [
+    {
+      "engine": "chromium",
+      "passed": true,
+      "checks": [
+        "keyboard play",
+        "rest",
+        "pause",
+        "map",
+        "save/continue",
+        "idle trigger",
+        "two autonomous completions",
+        "save isolation",
+        "DualSense standard mapping",
+        "keyboard/mouse/right-stick interruption"
+      ],
+      "demoCycles": 2
+    },
+    {
+      "engine": "webkit",
+      "passed": true,
+      "checks": [
+        "keyboard play",
+        "rest",
+        "pause",
+        "map",
+        "save/continue",
+        "idle trigger",
+        "two autonomous completions",
+        "save isolation",
+        "DualSense standard mapping",
+        "keyboard/mouse/right-stick interruption"
+      ],
+      "demoCycles": 2
+    },
+    {
+      "engine": "firefox",
+      "passed": true,
+      "checks": [
+        "keyboard play",
+        "rest",
+        "pause",
+        "map",
+        "save/continue",
+        "idle trigger",
+        "two autonomous completions",
+        "save isolation",
+        "DualSense standard mapping",
+        "keyboard/mouse/right-stick interruption"
+      ],
+      "demoCycles": 2
+    }
+  ]
+}

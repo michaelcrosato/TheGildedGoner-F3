@@ -1,0 +1,1174 @@
+{
+  "date": "2026-10-16T21:09:47.505Z",
+  "note": "Actual scene draw frequency over 8 seconds after warmup. Headless Canvas 2D; no dedicated GPU throughput claim.",
+  "results": [
+    {
+      "engine": "chromium",
+      "phase": "title",
+      "viewport": "1920x1080",
+      "fps": 60,
+      "frames": 480,
+      "meanDrawMs": 0.67,
+      "p95DrawMs": 1,
+      "scene": {
+        "mode": "title",
+        "panel": null,
+        "demo": false,
+        "demoCycles": 0,
+        "saveAvailable": true,
+        "performance": {
+          "fps": 60,
+          "updateMs": 0.3999999985098839,
+          "renderMs": 11.5,
+          "frameMs": 16.700000000000728,
+          "steps": 2,
+          "items": 201,
+          "actors": 6,
+          "culled": 4
+        },
+        "state": "playing",
+        "level": "bellwether",
+        "time": 0,
+        "hero": {
+          "x": 408,
+          "y": 694.4,
+          "hp": 100,
+          "stamina": 100,
+          "focus": 100,
+          "flasks": 3
+        },
+        "progress": {
+          "version": 1,
+          "level": "bellwether",
+          "worlds": {},
+          "checkpoint": "hearth",
+          "embers": 0,
+          "vigor": 0,
+          "temper": 0,
+          "weapon": "sword",
+          "inventory": [],
+          "flags": [],
+          "kills": [],
+          "deaths": 0,
+          "elapsed": 0,
+          "dropped": null
+        },
+        "enemies": [
+          {
+            "id": "foe-0",
+            "hp": 72,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-1",
+            "hp": 72,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-2",
+            "hp": 100,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-3",
+            "hp": 150,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-4",
+            "hp": 72,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-5",
+            "hp": 66,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-6",
+            "hp": 100,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-7",
+            "hp": 150,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-8",
+            "hp": 660,
+            "phase": 1,
+            "dead": false
+          }
+        ],
+        "stats": {
+          "attacks": 0,
+          "heavy": 0,
+          "dodges": 0,
+          "parries": 0,
+          "blocks": 0,
+          "heals": 0,
+          "casts": 0,
+          "summons": 0,
+          "kills": 0,
+          "damage": 0,
+          "recovered": 0
+        }
+      }
+    },
+    {
+      "engine": "chromium",
+      "phase": "journey",
+      "viewport": "1920x1080",
+      "fps": 59.4,
+      "frames": 476,
+      "meanDrawMs": 0.76,
+      "p95DrawMs": 1.1,
+      "scene": {
+        "mode": "demo",
+        "panel": null,
+        "demo": true,
+        "demoCycles": 0,
+        "saveAvailable": true,
+        "performance": {
+          "fps": 60,
+          "updateMs": 1,
+          "renderMs": 10,
+          "frameMs": 16.599999999998545,
+          "steps": 2,
+          "items": 282,
+          "actors": 6,
+          "culled": 4
+        },
+        "state": "playing",
+        "level": "bellwether",
+        "time": 9.17,
+        "hero": {
+          "x": 262.14,
+          "y": 495.02,
+          "hp": 100,
+          "stamina": 6.5,
+          "focus": 100,
+          "flasks": 3
+        },
+        "progress": {
+          "version": 1,
+          "level": "bellwether",
+          "worlds": {},
+          "checkpoint": "hearth",
+          "embers": 83,
+          "vigor": 0,
+          "temper": 0,
+          "weapon": "sword",
+          "inventory": [],
+          "flags": [],
+          "kills": [
+            "foe-0",
+            "foe-1",
+            "foe-2"
+          ],
+          "deaths": 0,
+          "elapsed": 9.166666666666787,
+          "dropped": null
+        },
+        "enemies": [
+          {
+            "id": "foe-0",
+            "hp": 0,
+            "phase": 1,
+            "dead": true
+          },
+          {
+            "id": "foe-1",
+            "hp": 0,
+            "phase": 1,
+            "dead": true
+          },
+          {
+            "id": "foe-2",
+            "hp": 0,
+            "phase": 1,
+            "dead": true
+          },
+          {
+            "id": "foe-3",
+            "hp": 150,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-4",
+            "hp": 72,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-5",
+            "hp": 66,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-6",
+            "hp": 100,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-7",
+            "hp": 150,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-8",
+            "hp": 660,
+            "phase": 1,
+            "dead": false
+          }
+        ],
+        "stats": {
+          "attacks": 7,
+          "heavy": 4,
+          "dodges": 0,
+          "parries": 3,
+          "blocks": 0,
+          "heals": 0,
+          "casts": 0,
+          "summons": 0,
+          "kills": 3,
+          "damage": 0,
+          "recovered": 0
+        }
+      }
+    },
+    {
+      "engine": "chromium",
+      "phase": "boss",
+      "viewport": "1920x1080",
+      "fps": 60,
+      "frames": 481,
+      "meanDrawMs": 0.88,
+      "p95DrawMs": 1.3,
+      "scene": {
+        "mode": "demo",
+        "panel": null,
+        "demo": true,
+        "demoCycles": 0,
+        "saveAvailable": true,
+        "performance": {
+          "fps": 60,
+          "updateMs": 1.1000000014901161,
+          "renderMs": 10.199999999254942,
+          "frameMs": 16.700000000000728,
+          "steps": 2,
+          "items": 182,
+          "actors": 5,
+          "culled": 3
+        },
+        "state": "playing",
+        "level": "bellwether",
+        "time": 64.2,
+        "hero": {
+          "x": 447.82,
+          "y": 125.31,
+          "hp": 120,
+          "stamina": 5.2,
+          "focus": 40,
+          "flasks": 4
+        },
+        "progress": {
+          "version": 1,
+          "level": "bellwether",
+          "worlds": {},
+          "checkpoint": "choir",
+          "embers": 81,
+          "vigor": 1,
+          "temper": 2,
+          "weapon": "glaive",
+          "inventory": [
+            "key",
+            "echo",
+            "glaive",
+            "flask"
+          ],
+          "flags": [
+            "key",
+            "glaive",
+            "flask",
+            "shortcut",
+            "seal"
+          ],
+          "kills": [
+            "foe-0",
+            "foe-1",
+            "foe-2",
+            "foe-4",
+            "foe-3",
+            "foe-5",
+            "foe-6",
+            "foe-7"
+          ],
+          "deaths": 0,
+          "elapsed": 64.19999999999716,
+          "dropped": null
+        },
+        "enemies": [
+          {
+            "id": "foe-0",
+            "hp": 72,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-1",
+            "hp": 72,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-2",
+            "hp": 0,
+            "phase": 1,
+            "dead": true
+          },
+          {
+            "id": "foe-3",
+            "hp": 150,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-4",
+            "hp": 0,
+            "phase": 1,
+            "dead": true
+          },
+          {
+            "id": "foe-5",
+            "hp": 66,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-6",
+            "hp": 100,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-7",
+            "hp": 150,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-8",
+            "hp": 27.120000000000033,
+            "phase": 2,
+            "dead": false
+          }
+        ],
+        "stats": {
+          "attacks": 28,
+          "heavy": 18,
+          "dodges": 1,
+          "parries": 10,
+          "blocks": 0,
+          "heals": 0,
+          "casts": 2,
+          "summons": 1,
+          "kills": 10,
+          "damage": 0,
+          "recovered": 0
+        }
+      }
+    },
+    {
+      "engine": "webkit",
+      "phase": "title",
+      "viewport": "1920x1080",
+      "fps": 47.9,
+      "frames": 383,
+      "meanDrawMs": 1.69,
+      "p95DrawMs": 2,
+      "scene": {
+        "mode": "title",
+        "panel": null,
+        "demo": false,
+        "demoCycles": 0,
+        "saveAvailable": true,
+        "performance": {
+          "fps": 46,
+          "updateMs": 0,
+          "renderMs": 10,
+          "frameMs": 18,
+          "steps": 2,
+          "items": 201,
+          "actors": 6,
+          "culled": 4
+        },
+        "state": "playing",
+        "level": "bellwether",
+        "time": 0,
+        "hero": {
+          "x": 408,
+          "y": 694.4,
+          "hp": 100,
+          "stamina": 100,
+          "focus": 100,
+          "flasks": 3
+        },
+        "progress": {
+          "version": 1,
+          "level": "bellwether",
+          "worlds": {},
+          "checkpoint": "hearth",
+          "embers": 0,
+          "vigor": 0,
+          "temper": 0,
+          "weapon": "sword",
+          "inventory": [],
+          "flags": [],
+          "kills": [],
+          "deaths": 0,
+          "elapsed": 0,
+          "dropped": null
+        },
+        "enemies": [
+          {
+            "id": "foe-0",
+            "hp": 72,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-1",
+            "hp": 72,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-2",
+            "hp": 100,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-3",
+            "hp": 150,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-4",
+            "hp": 72,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-5",
+            "hp": 66,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-6",
+            "hp": 100,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-7",
+            "hp": 150,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-8",
+            "hp": 660,
+            "phase": 1,
+            "dead": false
+          }
+        ],
+        "stats": {
+          "attacks": 0,
+          "heavy": 0,
+          "dodges": 0,
+          "parries": 0,
+          "blocks": 0,
+          "heals": 0,
+          "casts": 0,
+          "summons": 0,
+          "kills": 0,
+          "damage": 0,
+          "recovered": 0
+        }
+      }
+    },
+    {
+      "engine": "webkit",
+      "phase": "journey",
+      "viewport": "1920x1080",
+      "fps": 30.1,
+      "frames": 240,
+      "meanDrawMs": 1.55,
+      "p95DrawMs": 3,
+      "scene": {
+        "mode": "demo",
+        "panel": null,
+        "demo": true,
+        "demoCycles": 0,
+        "saveAvailable": true,
+        "performance": {
+          "fps": 27,
+          "updateMs": 1,
+          "renderMs": 10,
+          "frameMs": 41,
+          "steps": 5,
+          "items": 266,
+          "actors": 6,
+          "culled": 4
+        },
+        "state": "playing",
+        "level": "bellwether",
+        "time": 8.93,
+        "hero": {
+          "x": 262.14,
+          "y": 495.02,
+          "hp": 100,
+          "stamina": 6.5,
+          "focus": 100,
+          "flasks": 3
+        },
+        "progress": {
+          "version": 1,
+          "level": "bellwether",
+          "worlds": {},
+          "checkpoint": "hearth",
+          "embers": 48,
+          "vigor": 0,
+          "temper": 0,
+          "weapon": "sword",
+          "inventory": [],
+          "flags": [],
+          "kills": [
+            "foe-0",
+            "foe-1"
+          ],
+          "deaths": 0,
+          "elapsed": 8.933333333333467,
+          "dropped": null
+        },
+        "enemies": [
+          {
+            "id": "foe-0",
+            "hp": 0,
+            "phase": 1,
+            "dead": true
+          },
+          {
+            "id": "foe-1",
+            "hp": 0,
+            "phase": 1,
+            "dead": true
+          },
+          {
+            "id": "foe-2",
+            "hp": 4.664999999999992,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-3",
+            "hp": 150,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-4",
+            "hp": 72,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-5",
+            "hp": 66,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-6",
+            "hp": 100,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-7",
+            "hp": 150,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-8",
+            "hp": 660,
+            "phase": 1,
+            "dead": false
+          }
+        ],
+        "stats": {
+          "attacks": 7,
+          "heavy": 4,
+          "dodges": 0,
+          "parries": 3,
+          "blocks": 0,
+          "heals": 0,
+          "casts": 0,
+          "summons": 0,
+          "kills": 2,
+          "damage": 0,
+          "recovered": 0
+        }
+      }
+    },
+    {
+      "engine": "webkit",
+      "phase": "boss",
+      "viewport": "1920x1080",
+      "fps": 35.2,
+      "frames": 281,
+      "meanDrawMs": 1.81,
+      "p95DrawMs": 3,
+      "scene": {
+        "mode": "demo",
+        "panel": null,
+        "demo": true,
+        "demoCycles": 0,
+        "saveAvailable": true,
+        "performance": {
+          "fps": 33,
+          "updateMs": 1,
+          "renderMs": 8,
+          "frameMs": 19,
+          "steps": 3,
+          "items": 182,
+          "actors": 5,
+          "culled": 3
+        },
+        "state": "playing",
+        "level": "bellwether",
+        "time": 64.09,
+        "hero": {
+          "x": 447.82,
+          "y": 125.31,
+          "hp": 120,
+          "stamina": 5.2,
+          "focus": 40,
+          "flasks": 4
+        },
+        "progress": {
+          "version": 1,
+          "level": "bellwether",
+          "worlds": {},
+          "checkpoint": "choir",
+          "embers": 81,
+          "vigor": 1,
+          "temper": 2,
+          "weapon": "glaive",
+          "inventory": [
+            "key",
+            "echo",
+            "glaive",
+            "flask"
+          ],
+          "flags": [
+            "key",
+            "glaive",
+            "flask",
+            "shortcut",
+            "seal"
+          ],
+          "kills": [
+            "foe-0",
+            "foe-1",
+            "foe-2",
+            "foe-4",
+            "foe-3",
+            "foe-5",
+            "foe-6",
+            "foe-7"
+          ],
+          "deaths": 0,
+          "elapsed": 64.09166666666374,
+          "dropped": null
+        },
+        "enemies": [
+          {
+            "id": "foe-0",
+            "hp": 72,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-1",
+            "hp": 72,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-2",
+            "hp": 0,
+            "phase": 1,
+            "dead": true
+          },
+          {
+            "id": "foe-3",
+            "hp": 150,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-4",
+            "hp": 0,
+            "phase": 1,
+            "dead": true
+          },
+          {
+            "id": "foe-5",
+            "hp": 66,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-6",
+            "hp": 100,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-7",
+            "hp": 150,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-8",
+            "hp": 27.120000000000033,
+            "phase": 2,
+            "dead": false
+          }
+        ],
+        "stats": {
+          "attacks": 28,
+          "heavy": 18,
+          "dodges": 1,
+          "parries": 10,
+          "blocks": 0,
+          "heals": 0,
+          "casts": 2,
+          "summons": 1,
+          "kills": 10,
+          "damage": 0,
+          "recovered": 0
+        }
+      }
+    },
+    {
+      "engine": "firefox",
+      "phase": "title",
+      "viewport": "1920x1080",
+      "fps": 60,
+      "frames": 481,
+      "meanDrawMs": 1.54,
+      "p95DrawMs": 3,
+      "scene": {
+        "mode": "title",
+        "panel": null,
+        "demo": false,
+        "demoCycles": 0,
+        "saveAvailable": true,
+        "performance": {
+          "fps": 60,
+          "updateMs": 1,
+          "renderMs": 7,
+          "frameMs": 17.18000000000029,
+          "steps": 2,
+          "items": 201,
+          "actors": 6,
+          "culled": 4
+        },
+        "state": "playing",
+        "level": "bellwether",
+        "time": 0,
+        "hero": {
+          "x": 408,
+          "y": 694.4,
+          "hp": 100,
+          "stamina": 100,
+          "focus": 100,
+          "flasks": 3
+        },
+        "progress": {
+          "version": 1,
+          "level": "bellwether",
+          "worlds": {},
+          "checkpoint": "hearth",
+          "embers": 0,
+          "vigor": 0,
+          "temper": 0,
+          "weapon": "sword",
+          "inventory": [],
+          "flags": [],
+          "kills": [],
+          "deaths": 0,
+          "elapsed": 0,
+          "dropped": null
+        },
+        "enemies": [
+          {
+            "id": "foe-0",
+            "hp": 72,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-1",
+            "hp": 72,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-2",
+            "hp": 100,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-3",
+            "hp": 150,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-4",
+            "hp": 72,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-5",
+            "hp": 66,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-6",
+            "hp": 100,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-7",
+            "hp": 150,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-8",
+            "hp": 660,
+            "phase": 1,
+            "dead": false
+          }
+        ],
+        "stats": {
+          "attacks": 0,
+          "heavy": 0,
+          "dodges": 0,
+          "parries": 0,
+          "blocks": 0,
+          "heals": 0,
+          "casts": 0,
+          "summons": 0,
+          "kills": 0,
+          "damage": 0,
+          "recovered": 0
+        }
+      }
+    },
+    {
+      "engine": "firefox",
+      "phase": "journey",
+      "viewport": "1920x1080",
+      "fps": 59.9,
+      "frames": 479,
+      "meanDrawMs": 1.6,
+      "p95DrawMs": 3,
+      "scene": {
+        "mode": "demo",
+        "panel": null,
+        "demo": true,
+        "demoCycles": 0,
+        "saveAvailable": true,
+        "performance": {
+          "fps": 60,
+          "updateMs": 1,
+          "renderMs": 11,
+          "frameMs": 16.139999999999418,
+          "steps": 2,
+          "items": 267,
+          "actors": 6,
+          "culled": 4
+        },
+        "state": "playing",
+        "level": "bellwether",
+        "time": 9.12,
+        "hero": {
+          "x": 262.14,
+          "y": 495.02,
+          "hp": 100,
+          "stamina": 6.5,
+          "focus": 100,
+          "flasks": 3
+        },
+        "progress": {
+          "version": 1,
+          "level": "bellwether",
+          "worlds": {},
+          "checkpoint": "hearth",
+          "embers": 48,
+          "vigor": 0,
+          "temper": 0,
+          "weapon": "sword",
+          "inventory": [],
+          "flags": [],
+          "kills": [
+            "foe-0",
+            "foe-1"
+          ],
+          "deaths": 0,
+          "elapsed": 9.11666666666679,
+          "dropped": null
+        },
+        "enemies": [
+          {
+            "id": "foe-0",
+            "hp": 0,
+            "phase": 1,
+            "dead": true
+          },
+          {
+            "id": "foe-1",
+            "hp": 0,
+            "phase": 1,
+            "dead": true
+          },
+          {
+            "id": "foe-2",
+            "hp": 4.664999999999992,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-3",
+            "hp": 150,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-4",
+            "hp": 72,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-5",
+            "hp": 66,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-6",
+            "hp": 100,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-7",
+            "hp": 150,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-8",
+            "hp": 660,
+            "phase": 1,
+            "dead": false
+          }
+        ],
+        "stats": {
+          "attacks": 7,
+          "heavy": 4,
+          "dodges": 0,
+          "parries": 3,
+          "blocks": 0,
+          "heals": 0,
+          "casts": 0,
+          "summons": 0,
+          "kills": 2,
+          "damage": 0,
+          "recovered": 0
+        }
+      }
+    },
+    {
+      "engine": "firefox",
+      "phase": "boss",
+      "viewport": "1920x1080",
+      "fps": 60.1,
+      "frames": 481,
+      "meanDrawMs": 2.13,
+      "p95DrawMs": 4,
+      "scene": {
+        "mode": "demo",
+        "panel": null,
+        "demo": true,
+        "demoCycles": 0,
+        "saveAvailable": true,
+        "performance": {
+          "fps": 60,
+          "updateMs": 1,
+          "renderMs": 12,
+          "frameMs": 16.11999999999898,
+          "steps": 2,
+          "items": 182,
+          "actors": 5,
+          "culled": 3
+        },
+        "state": "playing",
+        "level": "bellwether",
+        "time": 64.17,
+        "hero": {
+          "x": 447.82,
+          "y": 125.31,
+          "hp": 120,
+          "stamina": 5.2,
+          "focus": 40,
+          "flasks": 4
+        },
+        "progress": {
+          "version": 1,
+          "level": "bellwether",
+          "worlds": {},
+          "checkpoint": "choir",
+          "embers": 81,
+          "vigor": 1,
+          "temper": 2,
+          "weapon": "glaive",
+          "inventory": [
+            "key",
+            "echo",
+            "glaive",
+            "flask"
+          ],
+          "flags": [
+            "key",
+            "glaive",
+            "flask",
+            "shortcut",
+            "seal"
+          ],
+          "kills": [
+            "foe-0",
+            "foe-1",
+            "foe-2",
+            "foe-4",
+            "foe-3",
+            "foe-5",
+            "foe-6",
+            "foe-7"
+          ],
+          "deaths": 0,
+          "elapsed": 64.1666666666638,
+          "dropped": null
+        },
+        "enemies": [
+          {
+            "id": "foe-0",
+            "hp": 72,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-1",
+            "hp": 72,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-2",
+            "hp": 0,
+            "phase": 1,
+            "dead": true
+          },
+          {
+            "id": "foe-3",
+            "hp": 150,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-4",
+            "hp": 0,
+            "phase": 1,
+            "dead": true
+          },
+          {
+            "id": "foe-5",
+            "hp": 66,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-6",
+            "hp": 100,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-7",
+            "hp": 150,
+            "phase": 1,
+            "dead": false
+          },
+          {
+            "id": "foe-8",
+            "hp": 27.120000000000033,
+            "phase": 2,
+            "dead": false
+          }
+        ],
+        "stats": {
+          "attacks": 28,
+          "heavy": 18,
+          "dodges": 1,
+          "parries": 10,
+          "blocks": 0,
+          "heals": 0,
+          "casts": 2,
+          "summons": 1,
+          "kills": 10,
+          "damage": 0,
+          "recovered": 0
+        }
+      }
+    }
+  ]
+}
